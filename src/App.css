@@ -1,38 +1,33 @@
-.App {
-  text-align: center;
+* {
+  font-family: Roboto,"Helvetica Neue",Arial,sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.board {
+  width: 100%;
+  display: grid;
+  outline: none;
+  grid-template-columns: repeat(20, auto);
+  gap: 1px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cell {
+  width: 40px;
+  height: 30px;
+  border: 1px solid #ccc;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.hero {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("./images//superman.png");
 }
 
-.App-link {
-  color: #61dafb;
+.mine {
+  background-color: black; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
